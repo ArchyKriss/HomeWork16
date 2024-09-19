@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements Serviceable{
     private String modelName;
     private int wheelsCount;
 
@@ -14,6 +14,4 @@ public abstract class Vehicle {
     public int getWheelsCount() {
         return wheelsCount;
     }
-    public abstract void updateTyre();
-    public abstract void checkEngine();
 }
