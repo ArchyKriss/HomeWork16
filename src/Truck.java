@@ -1,7 +1,13 @@
-public class Truck {
-    public String modelName;
-    public int wheelsCount;
-
+public class Truck extends Vehicle{
+    public Truck(String modelName) {
+       super(modelName, 6);
+    }
+    public void service() {
+        System.out.println("Обслуживаем грузовик " + getModelName());
+        updateTyre();
+        checkEngine();
+        checkTrailer();
+    }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
